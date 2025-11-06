@@ -41,6 +41,7 @@ html, body {
   font-family: 'Roboto', system-ui;
   font-size: 62.5%;
   font-weight: 400;
+  scroll-behavior: smooth;
   background: var(--gradient-bg);
   color: var(--color-white);
 }
