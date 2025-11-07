@@ -6,6 +6,7 @@
   <title>Сборка компьютера</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/main.js"></script>
 </head>
 <body>
   <header class="header">
@@ -19,7 +20,7 @@
           <a href="#process">Процесс работы</a>
           <a href="#command">Команда</a>
         </nav>
-        <button type="button" class="button header__button">
+        <button type="button" class="button header__button modal__btn">
           Оставить заявку
         </button>
       </div>
@@ -65,7 +66,7 @@
             </div>
           </div>
         </div>
-        <button class="button main-display__button" type="button">
+        <button class="button main-display__button modal__btn" type="button">
           Оставить заявку
         </button>
       </div>
@@ -206,7 +207,7 @@
           <div class="assembly__descr">
             Мы&nbsp;свяжемся с&nbsp;вами, чтобы уточнить детали заказа
           </div>
-          <button class="button assembly__btn">
+          <button class="button assembly__btn modal__btn">
             Оставить заявку
           </button>
           <div class="assembly__social flex">
@@ -234,6 +235,34 @@
         </div>
       </div>
     </section>
+
+    <form action="#" class="modal flex block-center">
+      <div class="modal__inner">
+        <div class="modal__close">
+          <img src="./images/cross.svg" alt="Close">
+        </div>
+        <h3 class="modal__header section-title">
+          Заявка на&nbsp;сборку&nbsp;ПК
+        </h3>
+        <div class="modal__subheader">
+          Мы&nbsp;свяжемся с&nbsp;вами, чтобы обсудить детали заказа
+        </div>
+        <div class="modal__elements">
+          <div class="modal__item">
+            <input type="text" class="modal__input" placeholder="Как вас зовут" />
+          </div>
+          <div class="modal__item">
+            <input type="tel" class="modal__input" placeholder="Номер телефона" />
+          </div>
+          <div class="modal__item">
+            <input type="email" class="modal__input" placeholder="E-mail" />
+          </div>
+        </div>
+        <button type="submit" class="button main-display__button">
+          Отправить
+        </button>
+      </div>
+    </form>
   </main>
 </body>
 </html>

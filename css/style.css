@@ -351,6 +351,83 @@ button, input {
   background: var(--gradient-icon);
 }
 
+.modal {
+  display: none;
+  padding: 3rem 0;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__inner {
+  padding: 9rem 1rem;
+  position: relative;
+  width: 66.3rem;
+  height: 55.1rem;
+  text-align: center;
+  background-color: #2c2c2c;
+}
+
+.modal__header {
+  margin-bottom: 1rem;
+}
+
+.modal__subheader {
+  margin-bottom: 2.8rem;
+  font-size: var(--text-size-medium);
+  line-height: 160%;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.modal__elements {
+  margin: 0 auto 3.2rem auto;
+  width: 45.4rem;
+}
+
+.modal__item {
+  height: 4.4rem;
+}
+
+.modal__input {
+  padding: 1.1rem 3rem;
+  width: 100%;
+  height: 100%;
+  font-size: 1.4rem;
+  line-height: 160%;
+  border-radius: 5rem;
+  background-color: rgb(112, 112, 112);
+  color: var(--color-white);
+}
+
+.modal__input::placeholder {
+  opacity: 0.8;
+  color: var(--color-white);
+}
+
+.modal__item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.modal__close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.noscroll {
+  height: 100%;
+  overflow: hidden;
+}
+
 /*@media (max-width: 1700px) {
 
   .main-display .container {
