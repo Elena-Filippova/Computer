@@ -9,8 +9,9 @@
   <script src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest"></script>
   <script defer src="./js/modal.js"></script>
   <script defer src="./js/accordeon.js"></script>
-  <script defer src="./js/smothScroll.js"></script>
+  <script defer src="./js/smoothScroll.js"></script>
   <script defer src="./js/timer.js"></script>
+  <script defer src="./js/sendForm.js"></script>
 </head>
 <body>
   <header class="header">
@@ -334,7 +335,6 @@
 
     <form action="#" class="modal flex block-center">
       <div class="modal__inner">
-
         <h3 class="modal__header section-title">
           Заявка на&nbsp;сборку&nbsp;ПК
         </h3>
@@ -343,16 +343,16 @@
         </div>
         <div class="modal__elements">
           <div class="modal__item">
-            <input type="text" class="modal__input" placeholder="Как вас зовут" />
+            <input type="text" name="name" class="modal__input" placeholder="Как вас зовут" />
           </div>
           <div class="modal__item">
-            <input type="tel" class="modal__input" placeholder="Номер телефона" />
+            <input type="tel" name="phone" class="modal__input" placeholder="Номер телефона" />
           </div>
           <div class="modal__item">
-            <input type="email" class="modal__input" placeholder="E-mail" />
+            <input type="email" name="email" class="modal__input" placeholder="E-mail" />
           </div>
         </div>
-        <button type="submit" class="button main-display__button">
+        <button type="submit" class="button main-display__button form-btn">
           Отправить
         </button>
       </div>
