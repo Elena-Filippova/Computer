@@ -197,6 +197,7 @@ button, input {
 }
 
 .course {
+  margin: 8rem 0;
   padding-top: 10rem;
 }
 
@@ -246,7 +247,9 @@ button, input {
 }
 
 .course__progress {
+  position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
 .course__progress-element {
@@ -281,11 +284,28 @@ progress::-webkit-progress-value {
 progress {
   background: var(--color-white);
   height: 0.6rem;
+  pointer-events: none;
 }
 
 progress::-moz-progress-value {
   background: var(--gradient-course);
   height: 0.6rem;
+}
+
+.progress-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--gradient-course);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 1s linear;
+}
+
+#money-progress[value]:not([value='0'])~.progress-layer {
+  transform: scaleX(var(--percent, 0));
 }
 
 .work {

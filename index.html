@@ -12,6 +12,7 @@
   <script defer src="./js/smoothScroll.js"></script>
   <script defer src="./js/timer.js"></script>
   <script defer src="./js/sendForm.js"></script>
+  <script defer src="./js/progress.js"></script>
 </head>
 <body>
   <header class="header">
@@ -79,40 +80,41 @@
         <img src="./images/header.jpg" alt="Backround">
       </div>
     </section>
-    <div class="course">
+    <section class="work" id="work">
       <div class="container">
-        <div class="course__wrap">
-          <div class="course-button__wrap">
-            <button class="button course__button">Заказать курс</button>
-          </div>
-          <div class="course__counter">
-            <div class="course__counter-line">
-              <span>Учеников всего:</span>
-              <span class="course__number">200</span>
-            </div>
-            <div class="course__counter-line">
-              <span>Успешно закончили курс:</span>
-              <span class="course__number">190</span>
-            </div>
-          </div>
-          <div class="course__progress">
-            <div class="course__progress-label">
-              <span>Заработано учениками:</span>
-              <span class="course__number">400 000₽</span>
-            </div>
-            <div class="course__progress-element">
-              <progress min="0" max="1000000" value="400000" />
-            </div>
-            <div class="course__progress-minmax">
-              <span>0₽</span>
-              <span>1 000 000₽</span>
+        <div class="course">
+          <div class="container">
+            <div class="course__wrap">
+              <div class="course-button__wrap">
+                <button class="button course__button">Заказать курс</button>
+              </div>
+              <div class="course__counter">
+                <div class="course__counter-line">
+                  <span>Учеников всего:</span>
+                  <span class="course__number">200</span>
+                </div>
+                <div class="course__counter-line">
+                  <span>Успешно закончили курс:</span>
+                  <span class="course__number">190</span>
+                </div>
+              </div>
+              <div class="course__progress">
+                <div class="course__progress-label">
+                  <span>Заработано учениками:</span>
+                  <span id="earned-money" class="course__number">0₽</span>
+                </div>
+                <div class="course__progress-element">
+                  <progress id="money-progress" min="0" max="1000000" value="400000" />
+                  <div class="progress-layer"></div>
+                </div>
+                <div class="course__progress-minmax">
+                  <span>0₽</span>
+                  <span>1 000 000₽</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <section class="work" id="work">
-      <div class="container">
         <div class="work__wrap flex">
           <div class="work__img">
             <img src="./images/work.png" alt="Computer">
